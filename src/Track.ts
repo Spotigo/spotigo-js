@@ -1,4 +1,8 @@
-export class Track {
+/**
+ * The interface for a track
+ * @see SpotigoTrackInfo
+ */
+export interface ITrack {
     artist: string;
     artists: string[]; // update to artist array once the artist class is created
     title: string;
@@ -7,13 +11,4 @@ export class Track {
     artURL: string;
     trackID: string;
     uri: string;
-
-    /**
-     * Represents a parsed Track object.
-     * @constructor
-     * @see SpotigoTrackInfo
-     */
-    constructor() {
-        console.log("unimplemented");
-    }
 }
