@@ -1,0 +1,24 @@
+{
+  "name": "spotigo.js",
+  "version": "1.0.0",
+  "description": "Spotigo Web API wrapper for Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node travis_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennyman123abc/spotigo-js.git"
+  },
+  "keywords": [
+    "spotify",
+    "spotigo",
+    "joshuadoes"
+  ],
+  "author": "bendevnull",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/bennyman123abc/spotigo-js/issues"
+  },
+  "homepage": "https://github.com/bennyman123abc/spotigo-js#readme"
+}
