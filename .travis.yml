@@ -5,8 +5,8 @@ node_js:
   - "10"
   - "9"
   - "8"
-before_script:
-  - npm install typescript
+# before_script:
+#   - npm install typescript
 script:
   # - tsc
   - node travis_test.js
