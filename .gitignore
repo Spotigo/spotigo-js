@@ -1,1 +1,2 @@
 *.js
+!travis_test.js
