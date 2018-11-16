@@ -23,5 +23,8 @@
   "homepage": "https://github.com/bennyman123abc/spotigo-js#readme",
   "dependencies": {
     "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.9"
   }
 }
