@@ -1,10 +1,13 @@
 language: node_js
 node_js:
   - "node"
-os:
-  - "windows"
-  - "linux"
-  - "osx"
-script:
-  - tsc
-  - node travis_test.js
+jobs:
+  include:
+    - stage: precise
+      os: linux
+      dist: precise
+      sudo: required
+      script:
+      - tsc
+      - node travis_test
+    
