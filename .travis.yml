@@ -1,26 +1,12 @@
 language: node_js
-node_js:
-  - "11"
-  - "10"
-  - "9"
-  - "8"
 jobs:
   include:
-    - stage: precise
+    - stage: linux
       os: linux
-      dist: precise
-      script:
-      - tsc
-      - node travis_test
-    - stage: trusty
-      os: linux
-      dist: trusty
-      script:
-      - tsc
-      - node travis_test
-    - stage: xenial
-      os: linux
-      dist: xenial
+      dist:
+      - precise
+      - trusty
+      - xenial
       script:
       - tsc
       - node travis_test
