@@ -1,14 +1,26 @@
+import { SpotigoTrackInfo } from "./SpotigoTrackInfo";
+
 /**
- * The interface for a track
+ * Represents a parsed track object.
  * @see SpotigoTrackInfo
  */
-export interface ITrack {
-    artist: string;
-    artists: string[]; // update to artist array once the artist class is created
-    title: string;
-    duration: number;
-    streamURL: string;
-    artURL: string;
-    trackID: string;
-    uri: string;
+export class Track {
+    artist: string = "";
+    artists: string[] = [];
+    title: string = "";
+    duration: number = 0;
+    streamURL: string = "";
+    artURL: string = "";
+    trackID: string = "";
+    uri: string = "";
+
+    /**
+     * Represents a parsed track object.
+     * @constructor
+     * @see SpotigoTrackInfo
+     * @param {SpotigoTrackInfo} trackInfo The track info meant to be parsed into a Track object
+     */
+    constructor(trackInfo: SpotigoTrackInfo) {
+        
+    }
 }

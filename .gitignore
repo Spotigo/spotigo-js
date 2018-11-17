@@ -2,3 +2,6 @@
 !travis_test.js
 node_modules/
 package-lock.json
+
+# temp docs
+src/out/

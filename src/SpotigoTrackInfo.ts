@@ -1,19 +1,7 @@
-interface ISpotigoTrackInfo {
-    gid: string;
-    name: string;
-    trackNumber: number;
-    discNumber: number;
-    duration: number;
-    album: string; // set to SpotigoAlbumInfo when initialized
-    artist: string[]; // set to SpotigoArtistInfo[] when initialized
-    unmarshal(json: JSON): void;
-}
-
 /**
  * The object for SpotigoTrackInfo
- * @see ISpotigoTrackInfo
  */
-export class SpotigoTrackInfo implements ISpotigoTrackInfo {
+export class SpotigoTrackInfo {
     gid: string = "";
     name: string = "";
     trackNumber: number = 0;
@@ -24,7 +12,7 @@ export class SpotigoTrackInfo implements ISpotigoTrackInfo {
 
     /**
      * Fills the track info with data from a JSON object
-     * @param obj JSON object containing data to fill into the track info
+     * @param {JSON} obj JSON object containing data to fill into the track info
      */
     unmarshal(obj: any): void {
         this.gid = obj.gid || "";
