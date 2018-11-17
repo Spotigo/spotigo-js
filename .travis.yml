@@ -3,10 +3,8 @@ jobs:
   include:
     - stage: linux
       os: linux
-      dist:
-      - precise
-      - trusty
-      - xenial
+      dist: xenial
+      dist: trusty
       script:
       - tsc
       - node travis_test
