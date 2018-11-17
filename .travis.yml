@@ -1,16 +1,12 @@
 language: node_js
-jobs:
-  include:
-    - stage: linux
-      os: linux
-      dist: xenial
-      dist: trusty
-      script:
-      - tsc
-      - node travis_test
-    - stage: osx
-      os: osx
-      script:
-      - tsc
-      - node travis_test
-    
+node_js:
+  - "node"
+os:
+  # - "windows"
+  - "linux"
+  - "osx"
+before_script:
+  - npm install -g typescript
+script:
+  - tsc
+  - node travis_test.js
