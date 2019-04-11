@@ -1,9 +1,7 @@
 language: node_js
 node_js:
-  - "11"
-  - "8"
+  - "node"
 os:
-  - "windows"
   - "linux"
 script:
   - tsc
