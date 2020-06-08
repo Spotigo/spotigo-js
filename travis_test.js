@@ -18,6 +18,6 @@ class AssertException {
     }
 }
 
-// assert(client.host != undefined, "Client failed to initialize");
+assert(client.host != undefined, "Client failed to initialize");
 client.getTrackInfo("https://open.spotify.com/track/5HCXMBxZIVaVLXpyoqPM3g");
 process.exit(0);
